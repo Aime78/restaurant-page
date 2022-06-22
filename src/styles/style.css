@@ -1,0 +1,210 @@
+/*
+COLOR PALETTE
+https://colours.neilorangepeel.com/
+rgba(0,0,0,0.92) - BLACK - HEADER-NAVIGATION
+rgb(245,245,245) - WHITESMOKE - SECTIONS
+rgb(0,0,0) - FOR THE FOOTER
+
+FONTS PALETTE
+font-family: 'Oswald', sans-serif; - FOR THE SECTION HEADER
+font-family: 'Charis SIL', serif; - FOR THE TITLE -NAVIGATION
+font-family: 'Tai Heritage Pro', serif; - FOR THE PARAGRAPH
+*/
+
+/* Global styles
+---------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#home-body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/mae-mu.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+    color: white;
+}
+
+/* Header styles
+-------------------------------------- */
+.home-header {
+    width: 100vw;
+    background-color: rgba(0,0,0,0.92);
+    color: rgb(255,250,250);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Charis SIL', serif;
+    position: fixed;
+    top: 0;
+}
+
+.home-header > h1 {
+    font-family: 'Charis SIL', serif;
+}
+.home-nav {
+    margin-right: 100px; 
+} 
+
+.home-nav > ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    padding-top: 15px;
+}
+.home-nav > ul > li > a {
+    
+    font-size: 20px;
+    color: rgb(255,250,250);
+    text-decoration: none;
+    
+}
+
+.home-nav > ul > li > a:hover {
+    color: rgb(65,105,225);
+}
+
+/* Section one styles
+-------------------------------------- */
+
+.home-section-one {
+    margin-top: 70vh;
+    margin-right: 0;
+    height: 111vh;
+    width: 100vw;
+    color: black;
+    background-color: rgb(245,245,245);
+    display: flex;
+    justify-content: space-around;
+}
+
+.burger-div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-div > h1 {
+    width: 400px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+}
+
+.burger-div > p {
+    width: 400px;
+    font-family: 'Charis SIL', serif;
+    font-size: 25px;
+}
+
+.burger-div > a {
+    background-color: rgb(211,211,211);
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Charis SIL', serif;
+    color: black;
+}
+
+.burger-div > a:hover {
+    color: white;
+    background-color: rgb(128,128,128);
+}
+
+/* Section two styles
+-------------------------------------- */
+
+.home-section-two {
+    color: black;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/natalie-scott.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-section-container {
+    background-color: rgb(245,245,245);
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-section-container > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.home-section-container > p {
+    font-family: 'Charis SIL', serif;
+    font-size: 18px;
+    width: 400px;
+    text-align: center;
+}
+
+.home-section-container > a {
+    background-color: rgb(211,211,211);
+    text-decoration: none;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Charis SIL', serif;
+    color: black;
+}
+
+.home-section-container > a:hover {
+    color: white;
+    background-color: rgb(128,128,128);
+}
+
+/* Footer styles
+-------------------------------------- */
+
+.home-footer {
+    width: 100vw;
+    background-color: rgb(0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    gap: 100px;
+    border-bottom: 2px solid white;
+}
+
+.footer-container > div > h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.footer-container > div > p {
+    font-family: 'Tai Heritage Pro', serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
